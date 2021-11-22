@@ -1,7 +1,8 @@
 var readline=require("readline-sync");
 var username=readline.question("what is your name")
 var score=0
-console.log("welcome "+username)
+console.log("welcome to shabeera's quiz")
+console.log("welcome"+username)
 function check(question,answer,options){
   console.log(question)
   for(var i=0;i<options.length;i++){
@@ -20,22 +21,32 @@ function check(question,answer,options){
   }
 
   var questionBank=[
-    {question:"where did you live?",
+    {question:"where did shabeera staying?",
     options:["Bangalore","hyderabad","delhi","pune"],
     answer:1
     
   },
   {
-    question:"what is your favourite color?",
+    question:"what is shabeera's  favourite color?",
     options:["pink","green","yellow","orange"],
     answer:3
   },
   {
-    question:"what you are learning ?",
-    options:["javascript","python","java","react"],
+    question:"what is shabeera's favourite food?",
+    options:["potato","brinjal","lady's finger","egg"],
+    answer:4
+
+  },{
+      question:"who is shabeera favourite  hero?",
+      options:["prabhas","gopichand","ram","allu-arjun"],
+      answer:1
+  },
+{
+    question:"who is shabeera's favourite place ?",
+    options:["hyderabad","miryalaguda","banagalore","guntur"],
     answer:2
 
-  }]
+}]
 for (var i=0;i<questionBank.length;i++){
 var currentquestion=questionBank[i]
 check(currentquestion.question,currentquestion.answer,currentquestion.options)
